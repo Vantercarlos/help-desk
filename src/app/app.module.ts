@@ -21,6 +21,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { TecnicoCraeteComponent } from './components/tecnico/tecnico-craete/tecnico-craete.component';
+import { NgxMaskModule } from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { TecnicoCraeteComponent } from './components/tecnico/tecnico-craete/tecn
       closeButton: true,
       progressBar: true
     }),
+    NgxMaskModule.forRoot(),
     BrowserAnimationsModule
   ],
   providers: [AuthInterceptorProvider],
