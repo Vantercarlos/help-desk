@@ -32,6 +32,7 @@ import { ClienteCraeteComponent } from './components/cliente/cliente-craete/clie
 import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
 import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
 import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
+import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-list.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { ClienteUpdateComponent } from './components/cliente/cliente-update/clie
     ClienteCraeteComponent,
     ClienteDeleteComponent,
     ClienteListComponent,
-    ClienteUpdateComponent
+    ClienteUpdateComponent,
+    ChamadoListComponent
   ],
   imports: [
     BrowserModule,
