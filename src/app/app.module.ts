@@ -23,6 +23,7 @@ import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { TecnicoCraeteComponent } from './components/tecnico/tecnico-craete/tecnico-craete.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
+import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecn
     TecnicoListComponent,
     LoginComponent,
     TecnicoCraeteComponent,
-    TecnicoUpdateComponent
+    TecnicoUpdateComponent,
+    TecnicoDeleteComponent
   ],
   imports: [
     BrowserModule,
