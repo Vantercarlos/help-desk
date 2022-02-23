@@ -22,6 +22,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { TecnicoCraeteComponent } from './components/tecnico/tecnico-craete/tecnico-craete.component';
 import { NgxMaskModule } from 'ngx-mask';
+import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NgxMaskModule } from 'ngx-mask';
     HeaderComponent,
     TecnicoListComponent,
     LoginComponent,
-    TecnicoCraeteComponent
+    TecnicoCraeteComponent,
+    TecnicoUpdateComponent
   ],
   imports: [
     BrowserModule,

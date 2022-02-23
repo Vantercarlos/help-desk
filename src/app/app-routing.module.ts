@@ -6,13 +6,15 @@ import { LoginComponent } from './components/login/login.component';
 import { NavComponent } from './components/nav/nav.component';
 import { TecnicoCraeteComponent } from './components/tecnico/tecnico-craete/tecnico-craete.component';
 import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
+import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: '', component: NavComponent, canActivate: [AuthGuard], children: [
     { path: 'home', component: HomeComponent },
     { path: 'tecnicos', component: TecnicoListComponent },
-    { path: 'tecnicos/create', component: TecnicoCraeteComponent }
+    { path: 'tecnicos/create', component: TecnicoCraeteComponent },
+    { path: 'tecnicos/update/:id', component: TecnicoUpdateComponent }
   ] },
 ];
 
