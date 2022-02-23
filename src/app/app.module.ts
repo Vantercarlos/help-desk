@@ -16,14 +16,22 @@ import { CoreModule } from './core/core/core.module';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
-import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
 import { LoginComponent } from './components/login/login.component';
 import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
-import { TecnicoCraeteComponent } from './components/tecnico/tecnico-craete/tecnico-craete.component';
 import { NgxMaskModule } from 'ngx-mask';
+
+// Técnicos Imports
+import { TecnicoCraeteComponent } from './components/tecnico/tecnico-craete/tecnico-craete.component';
 import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
+import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
 import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
+
+// Clientes Imports
+import { ClienteCraeteComponent } from './components/cliente/cliente-craete/cliente-craete.component';
+import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
+import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
+import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
 
 @NgModule({
   declarations: [
@@ -31,11 +39,15 @@ import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecn
     NavComponent,
     HomeComponent,
     HeaderComponent,
-    TecnicoListComponent,
     LoginComponent,
+    TecnicoListComponent,
     TecnicoCraeteComponent,
     TecnicoUpdateComponent,
-    TecnicoDeleteComponent
+    TecnicoDeleteComponent,
+    ClienteCraeteComponent,
+    ClienteDeleteComponent,
+    ClienteListComponent,
+    ClienteUpdateComponent
   ],
   imports: [
     BrowserModule,
